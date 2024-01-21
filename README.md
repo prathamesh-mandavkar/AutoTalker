@@ -1,5 +1,16 @@
 # AI-Video-generation-Using-Palm-Api-and-SadTalker
 
+## Example
+
+*Input Image*
+
+ <img src='./example/image.jpg' width='380'>
+
+*Output Video*
+
+https://github.com/Pmking27/AI-Video-generation-Using-Palm-Api-and-SadTalker/assets/97112558/ee86baae-bd2c-4a67-80c2-3768d6f571d6
+
+
 # Project Description
 
 ## The Apprentice Project (TAP)
