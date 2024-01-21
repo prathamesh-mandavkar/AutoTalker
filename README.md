@@ -2,6 +2,10 @@
 
 ## Example
 
+**Input Prompt**
+
+"Explain python and their applications in 30 second"
+
 *Input Image*
 
  <img src='./example/image.jpg' width='380'>
