@@ -8,7 +8,7 @@
 
 *Input Image*
 
- <img src='./example/image.jpg' width='380'>
+ <img src='./examples/image1.jpg' width='380'>
 
 *Output Video*
 
@@ -113,10 +113,12 @@ This repository demonstrates how to generate lip-synced videos from audio and an
    cd AI-Video-generation-Using-Palm-Api-and-SadTalker
    ```
 
-4. **Clone SadTalker:**
+4. **Download SadTalker with Models and Weights:**
    ```bash
-   git clone https://github.com/OpenTalker/SadTalker.git
+   python download_models.py
    ```
+   
+   Run the above command and wait until it shows "Downloads completed." This will download SadTalker along with the required models and weights.
 
 5. **Create a virtual environment:**
    ```bash
