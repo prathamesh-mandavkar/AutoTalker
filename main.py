@@ -3,7 +3,7 @@ import os
 from gtts import gTTS
 from pydub import AudioSegment
 import google.generativeai as palm
-palm.configure(api_key="AIzaSyAizYXZa8F6DV-_J6_ava7iSb7-aCD2c6I")
+palm.configure(api_key="Your API KEY")
 
 def text_to_audio(text, audio_path):
     tts = gTTS(text, lang='en', slow=False)
