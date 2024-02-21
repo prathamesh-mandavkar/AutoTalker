@@ -8,11 +8,11 @@
 
 *Input Image*
 
- <img src='./examples/image1.jpg' width='380'>
+ <img src='./examples/image4.jpg' width='380'>
 
 *Output Video*
 
-https://github.com/Pmking27/AI-Video-generation-Using-Palm-Api-and-SadTalker/assets/97112558/ee86baae-bd2c-4a67-80c2-3768d6f571d6
+[https://github.com/Pmking27/AI-Video-generation-Using-Palm-Api-and-SadTalker/assets/97112558/ee86baae-bd2c-4a67-80c2-3768d6f571d6](https://github.com/Pmking27/AutoTalker/assets/97112558/b8a35e28-14ad-42e6-8a7c-e9e28d9bfda5)
 
 
 # Project Description
@@ -75,15 +75,15 @@ The project focuses on leveraging technology to create new courses, personalize 
 
 This repository demonstrates how to generate lip-synced videos from audio and an image using Python. It utilizes several libraries, including:
 
-- **gTTS:** Text-to-speech conversion
+- **Suno Bark TTS:** Text-to-speech conversion
 - **pydub:** Audio manipulation
-- **google.generativeai:** Text generation
+- **google.generativeai (Gemini Pro):** Text generation
 - **SadTalker:** Lip syncing model (inference code)
-
+- **Openai whisper:** Speech-to-text conversion
 ## Features
 
 - Generates text explanations about Python and its applications using Google AI's text-to-speech capabilities.
-- Converts text to audio (WAV format) using gTTS.
+- Converts text to audio (WAV format) using Suno Bark TTS.
 - Creates lip-synced videos by combining the generated audio with a provided image using SadTalker.
 - Offers options for still image or full video generation, as well as preprocessing and enhancement techniques.
 
