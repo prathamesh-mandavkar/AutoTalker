@@ -11,7 +11,7 @@ import numpy as np
 import google.generativeai as genai
 import gc
 
-genai.configure(api_key="AIzaSyDMO1omEmOnpO9jwfT1PIip7fXqu6wLxuQ")
+genai.configure(api_key="ENTER_YOUR_KEY")
 model = genai.GenerativeModel('gemini-pro')
 
 def remove_special_characters(input_text):
