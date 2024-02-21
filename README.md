@@ -1,4 +1,4 @@
-# AutoTalker
+# AutoTalker 🤖🗣️📽️
 
 ## Example
 
