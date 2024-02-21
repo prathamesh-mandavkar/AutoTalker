@@ -80,6 +80,7 @@ This repository demonstrates how to generate lip-synced videos from audio and an
 - **google.generativeai (Gemini Pro):** Text generation
 - **SadTalker:** Lip syncing model (inference code)
 - **Openai whisper:** Speech-to-text conversion
+- **spotify pedalboard:** Audio enhac
 ## Features
 
 - Generates text explanations about Python and its applications using Google AI's text-to-speech capabilities.
@@ -107,10 +108,10 @@ This repository demonstrates how to generate lip-synced videos from audio and an
 2. **Install ffmpeg:**
    - Follow the appropriate instructions for your system.
 
-3. **Clone the AI-Video-generation-Using-Palm-Api-and-SadTalker repository:**
+3. **Clone the AutoTalker repository:**
    ```bash
-   git clone https://github.com/Pmking27/AI-Video-generation-Using-Palm-Api-and-SadTalker
-   cd AI-Video-generation-Using-Palm-Api-and-SadTalker
+   git clone https://github.com/Pmking27/AutoTalker
+   cd AutoTalker
    ```
 
 4. **Download SadTalker with Models and Weights:**
@@ -179,9 +180,11 @@ The project has the following structure:
 │   ├── requirements3d.txt
 │   ├── webui.bat
 │   └── webui.sh
-├── venv        # Virtual environment folder
-├── image.jpg   # Image file
-└── main.py     # Main Python script
+├── venv                 # Virtual environment folder
+├── download_models.py   # Main Python script
+├── main.py              # Main Python script
+├── subtitles.py         # Audio Enhacing and subtitles creation script
+└── tts.py               # Text To Speech into .wav file creation script
 ```
 
 ### Steps
@@ -189,10 +192,10 @@ The project has the following structure:
 1. **Activate Virtual Environment:**
    - Activate the virtual environment created earlier.
 
-2. **Configure Palm API Key:**
+2. **Configure GEMINI PRO API Key:**
    - Open the `main.py` file.
-   - Locate the line: `palm.configure(api_key="add your key here")`.
-   - Replace `"add your key here"` with your actual Palm API key.
+   - Locate the line: `genai.configure(api_key="add your key here")`.
+   - Replace `"add your key here"` with your actual GEMINI PRO API key.
 
 3. **Run the Main Script:**
    ```bash
@@ -207,7 +210,7 @@ The project has the following structure:
 5. **Review Results:**
    - The lip-synced video will be generated and saved in the specified output directory.
 
-Feel free to explore the provided file structure, customize the project, and configure the Palm API key as needed!
+Feel free to explore the provided file structure, customize the project, and configure the GEMINI PRO API key as needed!
 
 
 
@@ -220,7 +223,7 @@ We welcome contributions to improve and enhance this project! If you would like 
 
 2. **Clone the Repository:**
    ```bash
-   git clone https://github.com/YourUsername/AI-Video-generation-Using-Palm-Api-and-SadTalker.git
+   git clone https://github.com/YourUsername/AutoTalker.git
    ```
 
 3. **Create a Branch:**
