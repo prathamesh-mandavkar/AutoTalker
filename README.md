@@ -43,7 +43,7 @@ TAP aligns with several UN SDGs:
 
 ### Current System
 
-The Apprentice Project, under MentorMe Foundation, empowers underserved students through TAP Buddy—an artificial intelligence-powered WhatsApp chatbot. TAP Buddy offers video-based electives, guiding students through independent projects using personalized (ML-learned) and (AI) bot-based nudges and content. Self-learning project videos foster skills such as creativity, confidence, self-awareness, communication, and problem-solving, breaking mental barriers and instilling a growth mindset.
+The Apprentice Project(TAP), under MentorMe Foundation, empowers underserved students through TAP Buddy—an artificial intelligence-powered WhatsApp chatbot. TAP Buddy offers video-based electives, guiding students through independent projects using personalized (ML-learned) and (AI) bot-based nudges and content. Self-learning project videos foster skills such as creativity, confidence, self-awareness, communication, and problem-solving, breaking mental barriers and instilling a growth mindset.
 
 ### Challenges and Innovations
 
@@ -73,20 +73,43 @@ The project focuses on leveraging technology to create new courses, personalize 
 
 ## About
 
-This repository demonstrates how to generate lip-synced videos from audio and an image using Python. It utilizes several libraries, including:
+The project focuses on leveraging technology to create new courses, personalize existing ones, and enhance the assessment process, ultimately contributing to the development of 21st-century skills in students. AutoTalker, a component of TAP, showcases the capabilities of AI in generating lip-synced videos from text prompts and images, enhancing the overall educational experience for students. 
 
-- **Suno Bark TTS:** Text-to-speech conversion
-- **pydub:** Audio manipulation
-- **google.generativeai (Gemini Pro):** Text generation
-- **SadTalker:** Lip syncing model (inference code)
-- **Openai whisper:** Speech-to-text conversion
-- **spotify pedalboard:** Audio enhac
+It utilizes several libraries, including:
+
+- **Suno Bark TTS:** A text-to-speech conversion library used for generating audio from text prompts.
+- **pydub:** An audio manipulation library for handling audio files and formats.
+- **google.generativeai (Gemini Pro):** Google's generative AI Python SDK utilized for text generation.
+- **SadTalker:** A lip-syncing model used for synchronizing audio with facial movements in videos.
+- **Openai Whisper:** A library for speech-to-text conversion, enabling the customization of voice characteristics.
+- **Spotify Pedalboard:** An audio enhancement library for improving the quality and effects of audio files.
+- **MoviePy:** A video editing library that facilitates video processing and editing tasks.
+- **PyTorch:** A deep learning framework used for various machine learning tasks, including SadTalker's functionality.
+- **FFmpeg:** A multimedia framework used for handling multimedia data such as audio and video files.
+- **Hugging Face Transformers:** A library that provides pre-trained models and various utilities for natural language processing tasks.
+- **BetterTransformer:** A production-ready fast path to accelerate the deployment of Transformer models with high performance on CPU and GPU. The fast path feature works transparently for models based either directly on PyTorch core nn.
+- **NumPy:** A powerful numerical computation library for handling large, multi-dimensional arrays and matrices.
+- **Gradio:** A user-friendly library for creating customizable UI components around machine learning models, enabling easy deployment and interaction with models through web interfaces.
+
 ## Features
 
-- Generates text explanations about Python and its applications using Google AI's text-to-speech capabilities.
-- Converts text to audio (WAV format) using Suno Bark TTS.
-- Creates lip-synced videos by combining the generated audio with a provided image using SadTalker.
-- Offers options for still image or full video generation, as well as preprocessing and enhancement techniques.
+- **Text-to-Speech Conversion:** Utilizes Suno Bark TTS to convert text prompts into audio files (WAV format).
+- **Audio Manipulation:** Employs pydub for audio manipulation tasks, enhancing audio quality and applying desired effects.
+- **Generative AI Text:** Leverages Google's generative AI Python SDK (Gemini Pro) for text generation, providing diverse and contextually relevant prompts.
+- **Lip Syncing:** Integrates SadTalker, a lip-syncing model, to synchronize generated audio with facial movements in videos.
+- **Speech-to-Text Conversion:** Incorporates Openai Whisper for speech-to-text conversion, allowing customization of voice characteristics.
+- **Audio Enhancement:** Utilizes Spotify Pedalboard to enhance and apply effects to audio files, improving overall audio quality.
+- **Video Editing:** Implements MoviePy, a video editing library, for video processing and editing tasks, including the creation of final lip-synced videos.
+- **Deep Learning Framework:** Leverages PyTorch for its deep learning capabilities, essential for executing SadTalker's functionality.
+- **Multimedia Handling:** Uses FFmpeg, a multimedia framework, for handling multimedia data such as audio and video files during processing.
+- **Natural Language Processing:** Integrates Hugging Face Transformers, offering pre-trained models and utilities for natural language processing tasks.
+- **Fast Path for Transformer Models:** Incorporates BetterTransformer, a production-ready fast path for accelerated deployment of Transformer models on both CPU and GPU.
+- **Numerical Computation:** Relies on NumPy for powerful numerical computation, particularly for handling large, multi-dimensional arrays and matrices.
+- **User-Friendly UI Components:** Integrates Gradio, a user-friendly library, to create customizable UI components around machine learning models, facilitating easy deployment and interaction through web interfaces.
+- **Language Support:** Supports multiple languages, including English, Chinese (Simplified), French, German, Hindi, Italian, Japanese, Korean, Polish, Portuguese, Russian, Spanish, and Turkish.
+- **Subtitle Support:** Currently available only for the English language.
+
+These features collectively contribute to the generation of lip-synced videos from input text prompts and images, with support for various languages and subtitles in English.
 
 
 ## Getting Started
@@ -161,11 +184,11 @@ The project has the following structure:
 │   ├── SadTalker_V0.0.2_256.safetensors
 │   └── SadTalker_V0.0.2_512.safetensors
 │── gfpgan_weights  # Weights for GFPGAN enhancer
-│       ├── _MACOSX
-│       ├── alignment_WFLW_4HG.pth
-│       ├── detection_Resnet50_Final.pth
-│       ├── GFPGANv1.4.pth
-│       └── parsing_parsenet.pth
+│   ├── _MACOSX
+│   ├── alignment_WFLW_4HG.pth
+│   ├── detection_Resnet50_Final.pth
+│   ├── GFPGANv1.4.pth
+│   └── parsing_parsenet.pth
 ├── SadTalker   # Folder containing SadTalker code
 │   ├── app_sadtalker.py
 │   ├── cog.yaml
@@ -181,8 +204,9 @@ The project has the following structure:
 │   ├── webui.bat
 │   └── webui.sh
 ├── venv                 # Virtual environment folder
-├── download_models.py   # Main Python script
+├── download_models.py   # Models download script
 ├── main.py              # Main Python script
+├── requirements.txt     # All required dependencies list txt file
 ├── subtitles.py         # Audio Enhacing and subtitles creation script
 └── tts.py               # Text To Speech into .wav file creation script
 ```
