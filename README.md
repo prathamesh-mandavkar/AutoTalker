@@ -15,25 +15,25 @@
 [https://github.com/Pmking27/AI-Video-generation-Using-Palm-Api-and-SadTalker/assets/97112558/ee86baae-bd2c-4a67-80c2-3768d6f571d6](https://github.com/Pmking27/AutoTalker/assets/97112558/b8a35e28-14ad-42e6-8a7c-e9e28d9bfda5)
 
 
-# Project Description
+## Project Description
 
-## The Apprentice Project (TAP)
+### The Apprentice Project (TAP)
 
-Living in the 21st century requires a well-rounded education that equips students with essential skills for success. The Apprentice Project (TAP) is dedicated to fostering 21st-century skills among underserved children in government or low-income private schools.
+In the rapidly evolving landscape of the 21st century, a comprehensive education is paramount for preparing students with the skills necessary to thrive in modern society. The Apprentice Project (TAP) is dedicated to cultivating these essential 21st-century skills among underserved children enrolled in government or low-income private schools.
 
-TAP operates under the MentorMe Foundation, a Section 8 registered company. Supported by prestigious institutions such as Harvard University, IIM Bangalore, and the Nudge Foundation, TAP is an official partner with the Governments of Maharashtra and Delhi, impacting over 31,000 children through its innovative chatbot.
+TAP operates under the umbrella of the MentorMe Foundation, a Section 8 registered company, and is proudly supported by esteemed institutions such as Harvard University, IIM Bangalore, and the Nudge Foundation. As official partners with the Governments of Maharashtra and Delhi, TAP has a significant impact, reaching over 31,000 children through its innovative chatbot.
 
 ### Problem Statement
 
-Over 100 million middle and high school students from low-income communities in India lack critical 21st-century skills, including Social & Emotional Learning and Financial Literacy. The traditional exam-focused public education system contributes to the alarming fact that 1 in 2 children passing through the Indian education system is deemed unemployable due to the absence of these crucial skills.
+A staggering number of middle and high school students—over 100 million—from low-income communities across India lack critical 21st-century skills, including Social & Emotional Learning (SEL) and Financial Literacy. The traditional exam-centric public education system exacerbates this issue, leading to the alarming statistic that 1 in 2 children graduating from the Indian education system is deemed unemployable due to the absence of these crucial skills.
 
-- **Financial Literacy Stats:**
-  - Only 16.7% of Indian teenage students have basic financial literacy.
-  - Only 27% of the Indian adult population is financially literate.
+- **Financial Literacy Statistics:**
+  - Only 16.7% of Indian teenage students possess basic financial literacy.
+  - A mere 27% of the Indian adult population is considered financially literate.
 
 ### UN Sustainable Development Goals (SDGs)
 
-TAP aligns with several UN SDGs:
+TAP aligns its mission with several UN SDGs:
 
 - **Goal 1:** No Poverty
 - **Goal 2:** Zero Hunger
@@ -43,23 +43,31 @@ TAP aligns with several UN SDGs:
 
 ### Current System
 
-The Apprentice Project(TAP), under MentorMe Foundation, empowers underserved students through TAP Buddy—an artificial intelligence-powered WhatsApp chatbot. TAP Buddy offers video-based electives, guiding students through independent projects using personalized (ML-learned) and (AI) bot-based nudges and content. Self-learning project videos foster skills such as creativity, confidence, self-awareness, communication, and problem-solving, breaking mental barriers and instilling a growth mindset.
+The Apprentice Project (TAP), operating under the MentorMe Foundation, empowers underserved students through TAP Buddy—an artificial intelligence-powered WhatsApp chatbot. TAP Buddy offers video-based electives, guiding students through independent projects using personalized (ML-learned) and AI bot-based nudges and content. Self-learning project videos foster skills such as creativity, confidence, self-awareness, communication, and problem-solving, breaking mental barriers and instilling a growth mindset.
 
 ### Challenges and Innovations
 
-As the number of students utilizing TAP's chatbot grows, the project faces challenges and seeks innovative solutions:
+As the usage of TAP's chatbot continues to grow, the project faces challenges and seeks innovative solutions:
 
-1. **Course Creation:** Utilizing AI to generate content in various electives such as coding and visual arts, aiming to overcome limitations in bulk video creation due to manual time constraints.
+1. **Course Creation:** Leveraging AI to generate content across various electives such as coding and visual arts, aiming to overcome limitations in bulk video creation due to manual time constraints.
 
 2. **Personalized Learning:** Employing AI to create personalized coding tutorials or art project guides tailored to individual learning styles and skill levels. Advanced ML/Open AI analysis adapts content based on a learner's progress, ensuring a customized learning experience.
 
-3. **Content Creation:** Leveraging AI to generate code snippets, templates, or design ideas for art projects, guiding students at their skill levels and suggesting exploration options.
+3. **Content Creation:** Utilizing AI to generate code snippets, templates, or design ideas for art projects, guiding students at their skill levels and suggesting exploration options.
 
 4. **Artistic Exploration:** Recommending techniques and styles based on a child's skill level, broadening artistic horizons by comparing their work to famous artists or art movements.
 
-5. **Creative Coding:** Utilizing AI to brainstorm ideas and provide inspiration for innovative and artistic coding projects.
+5. **Creative Coding:** Using AI to brainstorm ideas and provide inspiration for innovative and artistic coding projects.
 
-The project focuses on leveraging technology to create new courses, personalize existing ones, and enhance the assessment process, ultimately contributing to the development of 21st-century skills in students.
+## Approach and Solution
+
+My approach to addressing the challenges faced by TAP involves leveraging cutting-edge technologies, including natural language processing (NLP), artificial intelligence (AI), and machine learning (ML), to develop AutoTalker—a component of TAP aimed at enhancing the educational experience for students.
+
+AutoTalker utilizes advanced AI models and libraries, such as Suno Bark TTS for text-to-speech conversion, Google's generative AI Python SDK (Gemini Pro) for text generation, and SadTalker for lip-syncing audio with facial movements in videos. By integrating these technologies, AutoTalker enables the creation of engaging and informative video content from text prompts and images.
+
+Furthermore, the project incorporates features like personalized learning, content creation assistance, and language support to cater to diverse learning needs and preferences. By harnessing the power of AI, AutoTalker empowers educators and students alike to access high-quality educational content tailored to their individual requirements, thereby fostering the development of essential 21st-century skills.
+
+Through this innovative solution, TAP aims to revolutionize the education landscape, bridging the gap in access to quality learning resources and empowering students from underserved communities to realize their full potential in the digital age.
 ## Table of Contents
 - [About](#about)
 - [Features](#features)
@@ -211,7 +219,7 @@ The project has the following structure:
 └── tts.py               # Text To Speech into .wav file creation script
 ```
 
-### Steps
+### Steps to Running AutoTalker and Opening Gradio Web UI:
 
 1. **Activate Virtual Environment:**
    - Activate the virtual environment created earlier.
@@ -221,29 +229,48 @@ The project has the following structure:
    - Locate the line: `genai.configure(api_key="add your key here")`.
    - Replace `"add your key here"` with your actual GEMINI PRO API key.
 
-3. **Run the Main Script:**
+3. **Run Main Script and Gradio Web UI:**
+   - Copy the provided Gradio code (`iface.launch()` part) from the script.
+
+4. **Run AutoTalker and Launch Gradio:**
+   - In the same terminal where your virtual environment is active, run the AutoTalker script along with the Gradio web UI.
    ```bash
    python main.py
    ```
 
-4. **Customize:**
-   - Modify the prompt in the `main()` function to generate text about different topics.
-   - Adjust audio and image paths, as well as the output directory, as needed.
-   - Explore different options for preprocessing and enhancement within the `lip_sync_audio_and_video()` function.
+5. **Access Gradio Web UI:**
+   - After running the script, Gradio will provide a link (usually localhost) where the web UI is hosted. Open that link in your web browser.
 
-5. **Review Results:**
-   - The lip-synced video will be generated and saved in the specified output directory.
+6. **Explore the Interface:**
+   - You will now have access to the Gradio web UI interface.
+   - Interact with the provided input components such as textboxes, radio buttons, sliders, and image upload options.
 
-Feel free to explore the provided file structure, customize the project, and configure the GEMINI PRO API key as needed!
+7. **Submit and Wait:**
+   - Click on the "Launch Interface" or similar button to submit your input.
+   - Gradio will process your input, generate the output, and display the results in the web UI.
+
+8. **Review Output:**
+   - The output may be a video with or without subtitles, depending on your configuration.
+
+9. **Explore Subtitles (If Enabled):**
+   - If you enabled subtitle support, explore the subtitles generated for the video.
+
+10. **Repeat and Experiment:**
+    - Feel free to experiment with different inputs, prompts, and parameters to generate various outputs.
+
+11. **Close Gradio UI:**
+    - Once you're done, close the Gradio web UI.
+
+By following these combined steps, you can seamlessly run AutoTalker, interact with the Gradio web UI, and experience the generated lip-synced videos.
 
 
 
-## Contributing
+## How to Contribute
 
-We welcome contributions to improve and enhance this project! If you would like to contribute, please follow these guidelines:
+We appreciate your interest in contributing to our project! To ensure a smooth and collaborative experience, please follow these guidelines:
 
 1. **Fork the Repository:**
-   - Fork this repository to your GitHub account.
+   - Start by forking this repository to your GitHub account.
 
 2. **Clone the Repository:**
    ```bash
@@ -251,16 +278,16 @@ We welcome contributions to improve and enhance this project! If you would like 
    ```
 
 3. **Create a Branch:**
-   - Create a new branch for your contributions.
+   - For each contribution, create a new branch with a descriptive name.
    ```bash
    git checkout -b feature/your-feature-name
    ```
 
 4. **Make Changes:**
-   - Implement your changes and improvements.
+   - Implement your enhancements or fixes. Ensure your changes align with the project's goals.
 
 5. **Commit Changes:**
-   - Commit your changes with descriptive commit messages.
+   - Commit your changes with clear and concise commit messages.
    ```bash
    git commit -m "Add your commit message here"
    ```
@@ -273,29 +300,65 @@ We welcome contributions to improve and enhance this project! If you would like 
 
 7. **Create Pull Request:**
    - Open a pull request from your forked repository to the main repository.
-   - Provide a clear description of your changes.
+   - Provide detailed information about your changes, outlining the purpose and impact.
 
 8. **Review and Collaborate:**
-   - Participate in discussions and address feedback on your pull request.
+   - Engage in discussions, respond to feedback, and collaborate with the community to refine your contribution.
 
 9. **Squash Commits (if needed):**
-   - If there are multiple commits, consider squashing them into a single, concise commit.
+   - If your pull request contains multiple commits, consider squashing them into a single, well-structured commit.
 
 10. **Merge:**
-    - Once approved, your pull request will be merged.
+    - Once your pull request is approved, it will be merged into the main repository.
 
-11. **Areas Needing Help:**
-    - If you are looking to contribute but need guidance, we have specific areas where help is appreciated:
-      - **Human-Like TTS Implementation:**
-        - Assistance is needed for implementing human-like TTS for both male and female voices.
-      - **Prompt Engineering:**
-        - Suggestions and contributions for better prompt engineering.
-      - **Feature Suggestions:**
-        - Share new feature ideas or improvements that could enhance the project.
+11. **Areas Needing Help: Human-Like TTS Implementation**
 
-Thank you for contributing! 🚀
+   If you're interested in making a significant impact, consider contributing to the implementation of Human-Like Text-to-Speech (TTS) for a diverse set of languages, including Indian regional languages. Focus on enhancing TTS capabilities for both male and female voices.
 
+   ### Supported Languages for Human-Like TTS Implementation:
 
+   - Arabic (ar)
+   - Bengali (bn)
+   - Bulgarian (bg)
+   - Croatian (hr)
+   - Czech (cs)
+   - Danish (da)
+   - Dutch (nl)
+   - Estonian (et)
+   - Finnish (fi)
+   - Greek (el)
+   - Hebrew (iw)
+   - Hungarian (hu)
+   - Indonesian (id)
+   - Latvian (lv)
+   - Lithuanian (lt)
+   - Norwegian (no)
+   - Romanian (ro)
+   - Serbian (sr)
+   - Slovak (sk)
+   - Slovenian (sl)
+   - Swahili (sw)
+
+   ### Additional Focus on Indian Regional Languages:
+
+   Given the diverse linguistic landscape in India, contributions to support Indian regional languages in TTS are highly valued. These languages may include, but are not limited to:
+
+   - Hindi
+   - Tamil
+   - Telugu
+   - Kannada
+   - Malayalam
+   - Punjabi
+   - Gujarati
+   - Marathi
+   - Bengali
+   - Odia
+   - Assamese
+   - Urdu
+
+   Your efforts in implementing TTS for these languages will significantly contribute to making educational content accessible to a broader audience, particularly in regions with diverse linguistic backgrounds.
+
+   Thank you for considering these important contributions to the Human-Like TTS implementation! Your work will play a vital role in making educational content inclusive and accessible to learners from various linguistic backgrounds. 🌐🔊
 ## License
 
 This project is licensed under the MIT License.
@@ -309,5 +372,29 @@ This project acknowledges the following open-source projects and their contribut
 
 - **[SadTalker](https://github.com/OpenTalker/SadTalker):**
   [CVPR 2023] SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation. A project by OpenTalker.
+
+- **[Pedalboard](https://github.com/spotify/pedalboard):**
+  A Python library for working with audio, developed by Spotify.
+
+- **[Whisper](https://github.com/openai/whisper):**
+  Robust Speech Recognition via Large-Scale Weak Supervision, an open-source project by OpenAI.
+
+- **[Transformers by Hugging Face](https://github.com/huggingface/transformers):**
+  🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.
+
+- **[Accelerate by Hugging Face](https://github.com/huggingface/accelerate):**
+  A simple way to train and use PyTorch models with multi-GPU, TPU, mixed-precision.
+
+- **[Optimum by Hugging Face](https://github.com/huggingface/optimum):**
+  🚀 Accelerate training and inference of 🤗 Transformers and 🤗 Diffusers with easy-to-use hardware optimization tools.
+
+- **[Bark by Suno AI](https://github.com/suno-ai/bark):**
+  🔊 Text-Prompted Generative Audio Model.
+
+- **[PyTorch](https://github.com/pytorch/pytorch):**
+  Tensors and Dynamic neural networks in Python with strong GPU acceleration.
+
+These projects have significantly contributed to the development and functionality of AutoTalker, and we extend our gratitude to their respective developers and maintainers.
+
 
 
