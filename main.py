@@ -144,4 +144,4 @@ iface = gr.Interface(fn=generate_output,
                             ],
                      outputs=gr.Video())
 
-iface.launch()
+iface.launch(share=True, host="0.0.0.0", port=7860)
