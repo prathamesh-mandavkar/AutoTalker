@@ -14,6 +14,12 @@
 
 [https://github.com/Pmking27/AI-Video-generation-Using-Palm-Api-and-SadTalker/assets/97112558/ee86baae-bd2c-4a67-80c2-3768d6f571d6](https://github.com/Pmking27/AutoTalker/assets/97112558/b8a35e28-14ad-42e6-8a7c-e9e28d9bfda5)
 
+## Project Demo Video
+
+Check out the demo video to see AutoTalker in action!
+
+[![AutoTalker Demo Video](https://img.youtube.com/vi/XBeGZBWYQ5w/0.jpg)](https://youtu.be/XBeGZBWYQ5w)
+
 
 ## Project Description
 
