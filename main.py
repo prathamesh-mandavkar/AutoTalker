@@ -23,7 +23,7 @@ def remove_special_characters(input_text):
 def lip_sync_audio_and_video(audio_path, source_image_path, result_dir, still, preprocess, enhancer,
                               pose_style, exp_weight, size_of_image):
     command = [
-        'python310', './SadTalker/inference.py',
+        'python', './SadTalker/inference.py',
         '--driven_audio', str(audio_path),
         '--source_image', str(source_image_path),
         '--result_dir', str(result_dir),
@@ -144,4 +144,4 @@ iface = gr.Interface(fn=generate_output,
                             ],
                      outputs=gr.Video())
 
-iface.launch(share=True, host="0.0.0.0", port=7860)
+iface.launch(share=True)
