@@ -1,5 +1,5 @@
 # AutoTalker 🤖🗣️📽️
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Pmking27/AutoTalker/blob/main/Notebook/AutoTalker.ipynb)
 ## Example
 
 **Input Prompt**
