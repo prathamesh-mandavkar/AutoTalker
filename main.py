@@ -10,8 +10,7 @@ from PIL import Image
 import numpy as np
 import google.generativeai as genai
 import gc
-
-import os
+import shutil
 
 gemini_key = os.environ.get('GEMINI_KEY')
 genai.configure(api_key=gemini_key)
@@ -56,12 +55,22 @@ def find_latest_mp4_file(folder_path):
 def generate_output(prompt, script_content, prompt_or_script, user_image, language, voice_gender,
                     pose_style, exp_weight, size_of_image, preprocess_type,
                     is_still_mode, gfpgan_enhancer,subtitle):
+    # Cleanup existing files and results folder
+    existing_files = ['my_file.mp3', 'enhance_my_file.mp3', 'enhance_my_file.wav']
+    for file_path in existing_files:
+        if os.path.exists(file_path):
+            os.remove(file_path)
+
+    results_folder = './results'
+    if os.path.exists(results_folder):
+        shutil.rmtree(results_folder)
+
     lang_to_voice_preset = {
         "English": {"male": "v2/en_speaker_7", "female": "v2/en_speaker_9"},
         "Chinese (Simplified)": {"male": "v2/zh_speaker_0", "female": "v2/zh_speaker_4"},
         "French": {"male": "v2/fr_speaker_0", "female": "v2/fr_speaker_1"},
         "German": {"male": "v2/de_speaker_0", "female": "v2/de_speaker_3"},
-        "Hindi": {"male": "v2/hi_speaker_2", "female": "v2/hi_speaker_0"},
+        "Hindi": {"male": "v2/hi_speaker_5", "female": "v2/hi_speaker_0"},
         "Italian": {"male": "v2/it_speaker_0", "female": "v2/it_speaker_2"},
         "Japanese": {"male": "v2/ja_speaker_2", "female": "v2/ja_speaker_0"},
         "Korean": {"male": "v2/ko_speaker_0", "female": "v2/ko_speaker_4"},
@@ -81,7 +90,7 @@ def generate_output(prompt, script_content, prompt_or_script, user_image, langua
         if language == "English":
             text = remove_special_characters(model.generate_content(contents=prompt).text)
         else:
-            text = model.generate_content().text
+            text = model.generate_content(contents=prompt).text
     else:
         text = script_content
 
@@ -145,6 +154,9 @@ iface = gr.Interface(fn=generate_output,
                              gr.Checkbox(label="GFPGAN as Face enhancer"),
                              gr.Checkbox(label="Subtitle Support (Currently available only for the English Language)")
                             ],
-                     outputs=gr.Video())
+                     outputs=gr.Video(),
+                     title="AutoTalker 🤖🗣️📽️",
+                     description="The project focuses on leveraging technology to create new courses, personalize existing ones, and enhance the assessment process, ultimately contributing to the development of 21st-century skills in students.")
+
 
 iface.launch(share=True)
