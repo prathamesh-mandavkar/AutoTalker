@@ -134,6 +134,7 @@ These features collectively contribute to the generation of lip-synced videos fr
 - [API key](https://ai.google.dev/) from Google AI.
 - [ffmpeg](https://ffmpeg.org/download.html) installed.
 - [PyTorch](https://pytorch.org/) installed. Ensure your system supports CUDA.
+- [ImageMagick](https://imagemagick.org/script/download.php) installed. This is required for MoviePy.
 - [SadTalker](https://github.com/OpenTalker/SadTalker) installed.
 
   **Note:** Ensure your GPU has a minimum of 4 GB VRAM with support for CUDA.
@@ -144,26 +145,29 @@ These features collectively contribute to the generation of lip-synced videos fr
 
 2. **Install ffmpeg:**
    - Follow the appropriate instructions for your system.
+  
+3. **Install ImageMagick:**
+   - Download and install [ImageMagick](https://imagemagick.org/script/download.php).
 
-3. **Clone the AutoTalker repository:**
+4. **Clone the AutoTalker repository:**
    ```bash
    git clone https://github.com/Pmking27/AutoTalker
    cd AutoTalker
    ```
 
-4. **Download SadTalker with Models and Weights:**
+5. **Download SadTalker with Models and Weights:**
    ```bash
    python download_models.py
    ```
    
    Run the above command and wait until it shows "Downloads completed." This will download SadTalker along with the required models and weights.
 
-5. **Create a virtual environment:**
+6. **Create a virtual environment:**
    ```bash
    python -m venv venv
    ```
 
-6. **Activate the virtual environment:**
+7. **Activate the virtual environment:**
    - **On Linux/Mac:**
      ```bash
      source venv/bin/activate
@@ -173,12 +177,12 @@ These features collectively contribute to the generation of lip-synced videos fr
      .\venv\Scripts\activate
      ```
 
-7. **Install dependencies:**
+8. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-8. **Install PyTorch with CUDA:**
+9. **Install PyTorch with CUDA:**
    - Follow the instructions on the [PyTorch website](https://pytorch.org/get-started/locally/) to install PyTorch with CUDA support based on your system.
 
 Now, you have successfully set up the environment for the project, ensuring your GPU meets the specified requirements.
@@ -271,7 +275,7 @@ By following these combined steps, you can seamlessly run AutoTalker, interact w
 
 
 
-## How to Contribute
+## Contributing
 
 We appreciate your interest in contributing to our project! To ensure a smooth and collaborative experience, please follow these guidelines:
 
