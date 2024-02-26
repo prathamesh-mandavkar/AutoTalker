@@ -183,7 +183,9 @@ These features collectively contribute to the generation of lip-synced videos fr
    ```
 
 9. **Install PyTorch with CUDA:**
-   - Follow the instructions on the [PyTorch website](https://pytorch.org/get-started/locally/) to install PyTorch with CUDA support based on your system.
+   ```bash
+   pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
+   ```
 
 Now, you have successfully set up the environment for the project, ensuring your GPU meets the specified requirements.
 
